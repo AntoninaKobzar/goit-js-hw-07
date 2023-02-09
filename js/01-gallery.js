@@ -40,10 +40,10 @@
             <img src="${event.target.dataset.source}" width="800" height="600">`,
             {
             onShow:(instance)=>{
-            window.addEventListener("keydown",onCloseModal);
+            document.addEventListener("keydown",onCloseModal);
             },
-            onclose:(instance)=>{
-            window.removeEventListener("keydown",onCloseModal);
+            onClose:(instance)=>{
+            document.removeEventListener("keydown",onCloseModal);
             },
             }
         );
